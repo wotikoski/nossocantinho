@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nosso Cantinho</title>
+<meta name="description" content="Lista de presentes e contribuicoes para o cantinho da Amanda e do Leo." />
+<meta name="theme-color" content="#f6f1ea" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Nosso Cantinho" />
+<meta property="og:description" content="Lista de presentes e contribuicoes para o cantinho da Amanda e do Leo." />
+<meta property="og:image" content="amanda-leonardo.jpg" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Nosso Cantinho" />
+<meta name="twitter:description" content="Lista de presentes e contribuicoes para o cantinho da Amanda e do Leo." />
+<meta name="twitter:image" content="amanda-leonardo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>">
+<style>
+:root {
+  --bg:#f6f1ea; --bg-soft:#fbf8f3; --line:#ddd1c2;
+  --text:#3c342d; --muted:#7b6f65; --accent:#52453a; --accent-hover:#41362d;
+  --card:rgba(255,255,255,.92); --shadow:0 18px 44px rgba(113,95,74,.11);
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:"Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at top, rgba(255,255,255,.82), transparent 34%),
+    linear-gradient(180deg, #faf7f2 0%, #f5efe7 100%);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { text-decoration:none; color:inherit; }
+img { display:block; max-width:100%; }
+button {
+  font-family:"Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.2;
+  color:inherit;
+  letter-spacing:0;
+  text-transform:none;
+  appearance:none;
+  -webkit-appearance:none;
+  background:none;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.container { width:min(1180px, calc(100% - 26px)); margin:0 auto; }
+.section { padding:22px 0; }
+.hero-shell {
+  margin-top:24px; background:rgba(239,230,218,.88); border:1px solid rgba(255,255,255,.78);
+  border-radius:38px; padding:14px; box-shadow:0 24px 72px rgba(121,104,84,.13);
+}
+.hero {
+  display:grid; grid-template-columns:minmax(240px,.7fr) minmax(0,1.3fr);
+  overflow:hidden; border-radius:30px; background:var(--bg-soft);
+}
+.hero-photo-wrap {
+  display:flex; align-items:center; justify-content:center; padding:24px;
+  background:linear-gradient(180deg, #eadfce 0%, #e5d9c9 100%);
+}
+.hero-photo { width:min(100%, 330px); border-radius:28px; overflow:hidden; box-shadow:0 16px 34px rgba(92,76,60,.16); }
+.hero-photo img { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center 24%; }
+.hero-content { display:flex; flex-direction:column; justify-content:center; padding:58px 58px 54px; }
+.pill { display:inline-flex; width:fit-content; padding:10px 16px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.82); color:var(--muted); }
+h1 { margin:18px 0 0; font-family:"Cormorant Garamond", Georgia, serif; font-size:clamp(2.9rem, 5vw, 4.6rem); font-weight:600; line-height:.92; letter-spacing:-.03em; }
+.lead { margin:20px 0 0; max-width:610px; font-size:18px; line-height:1.8; color:var(--muted); }
+.actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:50px;
+  padding:13px 20px;
+  border-radius:999px;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:.22s ease;
+  font-family:"Manrope", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.2;
+  letter-spacing:0;
+  text-align:center;
+  text-decoration:none;
+  white-space:normal;
+}
+.btn-primary { background:linear-gradient(180deg, #655548 0%, #58483c 100%); color:#fff; box-shadow:0 8px 18px rgba(88,72,60,.14); }
+.btn-primary:hover {
+  transform:translateY(-2px) scale(1.01);
+  box-shadow:0 12px 24px rgba(88,72,60,.18); background:linear-gradient(180deg, #5e4f43 0%, #4f4136 100%); }
+.btn-secondary { background:rgba(255,255,255,.88); border-color:rgba(221,209,194,.96); color:var(--text); }
+.btn-secondary:hover {
+  transform:translateY(-1px);
+  box-shadow:0 10px 20px rgba(115,99,79,.08);
+}
+.story {
+  display:grid; grid-template-columns:.92fr 1.08fr; gap:28px; border-radius:36px; border:1px solid rgba(221,209,194,.82);
+  background:rgba(255,255,255,.76); padding:34px; box-shadow:var(--shadow);
+}
+.story-side { border-radius:28px; background:linear-gradient(180deg, #efe6da 0%, #eadfce 100%); padding:28px; }
+.icon-box { width:54px; height:54px; display:inline-flex; align-items:center; justify-content:center; border-radius:18px; background:rgba(255,255,255,.8); }
+h2 { margin:18px 0 0; font-family:"Cormorant Garamond", Georgia, serif; font-size:clamp(2.25rem, 3vw, 3rem); font-weight:600; line-height:1.02; letter-spacing:-.02em; }
+.story p, .pix-card p, .pix-info p, .delivery-card p, .final-card p, .hint { color:var(--muted); line-height:1.9; }
+.section-title { display:flex; align-items:end; justify-content:space-between; gap:18px; margin-bottom:28px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.22em; font-size:12px; color:var(--muted); }
+.hint { max-width:470px; font-size:14px; text-align:right; }
+.gift-group { margin-bottom:38px; }
+.group-head { display:flex; align-items:center; gap:14px; margin-bottom:18px; }
+.group-head::before, .group-head::after { content:""; height:1px; background:var(--line); flex:1; }
+.group-head span { padding:10px 16px; border-radius:999px; border:1px solid var(--line); background:rgba(255,255,255,.75); font-size:14px; color:#6b6056; }
+.gift-grid { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; }
+.gift-card {
+  overflow:hidden;
+  height:100%;
+  border-radius:30px;
+  border:1px solid rgba(221,209,194,.92);
+  background:rgba(255,255,255,.94);
+  box-shadow:0 18px 42px rgba(115,99,79,.07);
+  display:flex;
+  flex-direction:column;
+  transform:translateY(12px) scale(.995);
+  opacity:0;
+  transition:
+    transform .36s cubic-bezier(.22,1,.36,1),
+    opacity .36s ease,
+    box-shadow .24s ease,
+    border-color .24s ease,
+    background-color .24s ease;
+  will-change: transform, box-shadow, opacity;
+}
+.gift-card.revealed {
+  transform:translateY(0) scale(1);
+  opacity:1;
+}
+.gift-thumb {
+  height:180px; padding:14px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg, #efe6da 0%, #e6dbcc 55%, #f5efe7 100%);
+  border-bottom:1px solid rgba(221,209,194,.8);
+}
+.gift-thumb img {
+  width:100%; height:100%; object-fit:contain; object-position:center center;
+  background:#fff; border-radius:16px; padding:8px;
+}
+.gift-card.revealed:hover {
+  transform:translateY(-4px) scale(1.006);
+  box-shadow:0 22px 46px rgba(115,99,79,.09);
+  border-color:rgba(206,192,178,.96);
+}
+.gift-card.revealed:focus-within {
+  transform:translateY(-4px) scale(1.006);
+  box-shadow:0 22px 46px rgba(115,99,79,.09);
+  border-color:rgba(206,192,178,.96);
+}
+.gift-thumb img {
+  transition: transform .32s ease, filter .28s ease;
+}
+.gift-card.revealed:hover .gift-thumb img {
+  transform:scale(1.01);
+  filter:saturate(1.01);
+}
+
+.gift-body {
+  display:flex;
+  flex:1 1 auto;
+  flex-direction:column;
+  gap:14px;
+  padding:24px 22px 22px;
+  min-height:340px;
+}
+.gift-head { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; min-height:78px; }
+.gift-head h3 { margin:0; font-size:18px; line-height:1.32; font-weight:700; }
+.store { margin:6px 0 0; font-size:14px; color:var(--muted); }
+.note { margin:0; font-size:15px; line-height:1.75; color:#6d6258; min-height:52px; }
+.gift-actions {
+  margin-top:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  padding-top:2px;
+}
+.reserve-btn { display:none !important; }
+.pix-shell {
+  display:grid; grid-template-columns:.95fr 1.05fr; gap:24px; border-radius:36px; border:1px solid rgba(221,209,194,.82);
+  background:#f8f4ee; padding:32px; box-shadow:var(--shadow);
+}
+.pix-card, .pix-info { border-radius:28px; padding:28px; }
+.pix-card { background:rgba(255,255,255,.86); }
+.pix-info { display:grid; grid-template-columns:.9fr 1.1fr; gap:22px; align-items:center; background:linear-gradient(180deg, #efe6da 0%, #eadfce 100%); }
+.delivery-card {
+  margin-top:22px;
+  border-radius:28px;
+  padding:28px;
+  border:1px solid rgba(221,209,194,.82);
+  background:rgba(255,255,255,.86);
+  box-shadow:0 14px 32px rgba(115,99,79,.07);
+}
+.delivery-address {
+  margin-top:16px;
+  padding:18px;
+  border-radius:22px;
+  background:linear-gradient(180deg, #f4ede4 0%, #efe5d8 100%);
+  color:var(--text);
+  line-height:1.9;
+  font-style:normal;
+}
+.qr-wrap { display:flex; justify-content:center; }
+.qr-card { padding:16px; border-radius:28px; background:#fff; box-shadow:0 14px 32px rgba(115,99,79,.11); }
+.pix-key { margin-top:12px; padding:16px; border-radius:18px; border:1px solid var(--line); background:rgba(255,255,255,.76); font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; word-break:break-all; }
+.final-card { border-radius:34px; border:1px solid rgba(221,209,194,.82); background:rgba(255,255,255,.78); padding:40px 32px; text-align:center; box-shadow:var(--shadow); }
+.signature { margin-top:22px; font-size:20px; font-weight:600; }
+.footer-credit {
+  margin-top:16px;
+  font-size:14px;
+  color:var(--muted);
+}
+.footer-credit a {
+  color:var(--accent);
+  font-weight:600;
+}
+.toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%) translateY(18px); opacity:0; pointer-events:none; padding:12px 18px; border-radius:999px; background:rgba(60,52,45,.96); color:#fff; font-size:14px; transition:.22s ease; }
+.toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+@media (max-width: 1100px) {
+  .hero { grid-template-columns:320px minmax(0,1fr); }
+  .hero-content { padding:48px 38px 42px; }
+  .gift-grid { grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .story, .pix-shell, .pix-info { grid-template-columns:1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gift-card,
+  .gift-thumb img {
+    transition:none !important;
+  }
+  .gift-card {
+    opacity:1 !important;
+    transform:none !important;
+  }
+  .gift-card:hover,
+  .gift-card:focus-within {
+    transform:none !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero { grid-template-columns:1fr; }
+  .hero-photo-wrap { padding:20px 20px 0; }
+  .hero-photo { width:min(100%, 280px); }
+  .hero-content { padding:28px 22px 26px; text-align:center; align-items:center; }
+  .lead { font-size:16px; }
+  .actions { width:100%; justify-content:center; }
+  .actions .btn, .gift-actions .btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background .18s ease,
+    border-color .18s ease,
+    color .18s ease; width:100%; }
+  .story, .pix-shell, .final-card { padding:22px; }
+  .story-side, .pix-card, .pix-info { padding:22px; }
+  .section-title { flex-direction:column; align-items:flex-start; }
+  .hint { text-align:left; max-width:none; }
+  .gift-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero-shell">
+      <div class="hero">
+        <div class="hero-photo-wrap"><div class="hero-photo"><img src="amanda-leonardo.jpg" alt="Amanda e Leonardo"></div></div>
+        <div class="hero-content">
+          <div class="pill">🤍 Amanda & Leo</div>
+          <h1>Nosso novo lar</h1>
+          <p class="lead">Entre casamento, mudança e uma casa nova para montar, percebemos uma coisa: a lista de sonhos é grande. Se você quiser fazer parte desse momento e nos ajudar a montar o nosso cantinho, ficaremos imensamente gratos.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#presentes">Ver lista de presentes</a>
+            <a class="btn btn-secondary" href="#pix">Contribuir com Pix</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="story">
+        <div class="story-side">
+          <div class="icon-box">🏡</div>
+          <h2>Um novo capítulo</h2>
+          <p>Obrigado por fazer parte desse momento com a gente. Seu carinho já faz diferença antes mesmo de qualquer presente chegar por aqui.</p>
+        </div>
+        <div class="story-text">
+          <p>Se você chegou até aqui, provavelmente já faz parte da nossa história. Ou talvez tenha clicado no link por curiosidade, o que também é totalmente válido. De qualquer forma, ficamos muito felizes de ter você por aqui.</p>
+          <p>Nos conhecemos há alguns anos e, desde então, fomos construindo uma história cheia de risadas, planos e alguns desafios pelo caminho. Agora chegou a hora de dar um passo ainda maior: o casamento.</p>
+          <p>Recentemente surgiu a oportunidade da nossa casa nova. Daquelas oportunidades que aparecem e fazem a gente pensar: agora vai. Como todo começo, montar uma casa do zero tem seus desafios. Por isso criamos esse espaço para quem quiser contribuir de alguma forma com o nosso novo lar.</p>
+          <p>Se você quiser participar desse momento com um presente, uma contribuição em Pix ou qualquer gesto de carinho, ficaremos imensamente gratos. Cada ajuda já passa a fazer parte da história da nossa casa.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="presentes" class="section">
+      <div class="section-title">
+        <div>
+          <div class="eyebrow">Lista de presentes</div>
+          <h2>Escolha um item e fale com a Amanda</h2>
+        </div>
+        
+      </div>
+      <div class="gift-group"><div class="group-head"><span>Eletroportáteis</span></div><div class="gift-grid">
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/ialeLWi.jpeg" alt="Aspirador vertical Electrolux Ultra" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Aspirador vertical Electrolux Ultra</h3>
+            <p class="store">Electrolux</p>
+          </div>
+          <div class="gift-icon">🧹</div>
+        </div>
+        <p class="note">127V</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://loja.electrolux.com.br/aspirador-vertical-com-fio-ultra-electrolux-2-mm-1--stk15-/p?skuId=310118544" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Aspirador%20vertical%20Electrolux%20Ultra." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/UZnflWS.jpeg" alt="Torradeira Arno Soleil Marfim" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Torradeira Arno Soleil Marfim</h3>
+            <p class="store">Arno</p>
+          </div>
+          <div class="gift-icon">🍞</div>
+        </div>
+        <p class="note">220V</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.arno.com.br/torradeira-arno-soleil-marfim-7211004049-pai/p" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Torradeira%20Arno%20Soleil%20Marfim." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/nVQbSzF.jpeg" alt="Chaleira Arno Soleil Marfim" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Chaleira Arno Soleil Marfim</h3>
+            <p class="store">Arno</p>
+          </div>
+          <div class="gift-icon">🫖</div>
+        </div>
+        <p class="note">220V</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.arno.com.br/chaleira-arno-soleil-marfim-7211004045-pai/p?skuId=60&srsltid=AfmBOoqNy90y6LCEvifP8xb6rM27zUZHlofAcstjn5Vbp1ip4bFi2cE6" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Chaleira%20Arno%20Soleil%20Marfim." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/tKg1KrC.jpeg" alt="Liquidificador KitchenAid Pure Power Porcelain" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Liquidificador KitchenAid Pure Power Porcelain</h3>
+            <p class="store">KitchenAid</p>
+          </div>
+          <div class="gift-icon">🥤</div>
+        </div>
+        <p class="note">Para receitas e drinks caprichados</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.kitchenaid.com.br/liquidificador-pure-power-kitchenaid-porcelain-kua20al/p?srsltid=AfmBOopQJ-lXnSLi5bEjeQPoLGkh7uMO1DlXVEE26NnV-yMKPfcsGb83" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Liquidificador%20KitchenAid%20Pure%20Power%20Porcelain." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/uhB7Qff.jpeg" alt="Acessórios para Air Fryer Electrolux" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Acessórios para Air Fryer Electrolux</h3>
+            <p class="store">Electrolux</p>
+          </div>
+          <div class="gift-icon">🍟</div>
+        </div>
+        <p class="note">Para completar a cozinha</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://loja.electrolux.com.br/conjunto-de-acessorios-para-air-fryer/p" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Acess%C3%B3rios%20para%20Air%20Fryer%20Electrolux." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/dpotvUP.jpeg" alt="Air Fryer Oven 5 em 1 Electrolux por Rita Lobo 12L" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Air Fryer Oven 5 em 1 Electrolux por Rita Lobo 12L</h3>
+            <p class="store">Electrolux</p>
+          </div>
+          <div class="gift-icon">🍗</div>
+        </div>
+        <p class="note">220V</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://loja.electrolux.com.br/air-fryer-oven-5-em-1-electrolux-por-rita-lobo-12l-experience--eaf85-/p?skuId=310130037" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Air%20Fryer%20Oven%205%20em%201%20Electrolux%20por%20Rita%20Lobo%2012L." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/mrFLjLl.png" alt="Multiprocessador PowerChop Philips Walita" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Multiprocessador PowerChop Philips Walita</h3>
+            <p class="store">Philips Walita</p>
+          </div>
+          <div class="gift-icon">🥣</div>
+        </div>
+        <p class="note">Praticidade no modo turbo</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.walita.com.br/multiprocessador-powerchop-600-philips-walita-preto-600w---2-acessorios-inclusos---ri7300/p?idsku=1086&skuId=1087&srsltid=AfmBOorzSJhjGgri5av_srFtSEXD1r0HWEDBYufWGf-gsyW_8HYZI1XkImA&utmi_cp=madrugada%20shopping" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Multiprocessador%20PowerChop%20Philips%20Walita." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/L3oV5av.jpeg" alt="Jogo de Panelas Brinox Antiaderente Ceramic Life Sirius 6 Peças com Indução Vanilla" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jogo de Panelas Brinox Antiaderente Ceramic Life Sirius 6 Peças com Indução Vanilla</h3>
+            <p class="store">Brinox</p>
+          </div>
+          <div class="gift-icon">🍳</div>
+        </div>
+        <p class="note">Para começar a cozinha com estilo</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.brinox.com.br/jogo-de-panelas-brinox-antiaderente-ceramic-life-sirius-6-pecas-com-inducao-vanilla_4814101-1/p?idsku=4814101" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jogo%20de%20Panelas%20Brinox%20Antiaderente%20Ceramic%20Life%20Sirius%206%20Pe%C3%A7as%20com%20Indu%C3%A7%C3%A3o%20Vanilla." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    </div></div><div class="gift-group"><div class="group-head"><span>Mesa posta & cozinha</span></div><div class="gift-grid">
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/19HpcW3.jpeg" alt="Faqueiro 30 peças Veneza em aço inox" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Faqueiro 30 peças Veneza em aço inox</h3>
+            <p class="store">Camicado</p>
+          </div>
+          <div class="gift-icon">🍴</div>
+        </div>
+        <p class="note">Bonito e atemporal</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.camicado.com.br/p/faqueiro-30-pecas-veneza-aco-inox-wolff/-/A-7010705529968-br.lc" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Faqueiro%2030%20pe%C3%A7as%20Veneza%20em%20a%C3%A7o%20inox." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+<article class="gift-card">
+  <div class="gift-thumb">
+    <img src="https://i.imgur.com/q3NaXPK.jpeg" alt="Jogo de taças para vinho Haus Concept Dream" loading="lazy" referrerpolicy="no-referrer">
+  </div>
+  <div class="gift-body">
+    <div class="gift-head">
+      <div>
+        <h3>Jogo de taças para vinho Haus Concept Dream 450 ml</h3>
+        <p class="store">Amazon</p>
+      </div>
+      <div class="gift-icon">🍷</div>
+    </div>
+    <p class="note">Para brindar momentos especiais no nosso novo lar</p>
+    <div class="gift-actions">
+      <a class="btn btn-primary" href="https://www.amazon.com.br/Haus-Concept-Ta%C3%A7as-Vinho-Dream/dp/B0G26L424P" target="_blank">
+        Ver presente
+      </a>
+      <a class="btn btn-secondary" href="https://wa.me/5527998090987">
+        Falar com a Amanda
+      </a>
+      <button class="btn btn-secondary reserve-btn" type="button">
+        Marcar como reservado
+      </button>
+    </div>
+  </div>
+</article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/MY0sOQZ.png" alt="Jogo de taças para sobremesa Cameratta com borda dourada" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jogo de taças para sobremesa Cameratta com borda dourada</h3>
+            <p class="store">Westwing</p>
+          </div>
+          <div class="gift-icon">🍨</div>
+        </div>
+        <p class="note">Elegância em modo sobremesa</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.westwing.com.br/jogo-de-tacas-para-sobremesa-cameratta-com-borda-dourada-313528.html" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jogo%20de%20ta%C3%A7as%20para%20sobremesa%20Cameratta%20com%20borda%20dourada." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/mjjq4mG.jpeg" alt="Jarra + 6 copos Graffiato de vidro Hauskraft" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jarra + 6 copos Graffiato de vidro Hauskraft</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">🥛</div>
+        </div>
+        <p class="note">Para servir com estilo</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/jogo-de-7-pecas-jarra--6-copos-graffiato-de-vidro-hauskraft/up/MLBU3301839655?pdp_filters=item_id%3AMLB5507415172&matt_tool=38524122#origin=share&sid=share&wid=MLB5507415172" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jarra%20%2B%206%20copos%20Graffiato%20de%20vidro%20Hauskraft." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/FOcjw3Y.jpeg" alt="Jogo de copos Dream 350 ml Haus Concept" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jogo de copos Dream 350 ml Haus Concept</h3>
+            <p class="store">Amazon</p>
+          </div>
+          <div class="gift-icon">🥃</div>
+        </div>
+        <p class="note">Para o dia a dia bonito</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.amazon.com.br/Haus-Concept-Copos-Dream-350ml/dp/B0G26RPM9C?dib=eyJ2IjoiMSJ9.VgaXlu2oOIMXp0Lqh99kkRBYlXtxZajFLFO2Qzkc9tFZNiYWYUZJtMPBNuxf66TX2yR5l0-xbsTX6cv_rM-G6lGQkWrMtq8vt1PF-Rrgp9F70xyVjB0nMwkPyfu0VJGpkquy2Q7lKVl5G2k5WH77Llw_cX99E-xVrL_LyOc5stDwz2lA2YusTf1VdJBIsS_7ufGRHAl2tfLfwJ5_OG2loYLcgf1byvR8TmSPspWGQ4c.d5WFLIcFU8HQnj_1_aHBSsgtCsVrQ6TdGddsd3EY2qA&dib_tag=se&qid=1773522909&refinements=p_4%3AHaus+Concept&s=kitchen&sr=1-29&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&xpid=DVyXH9oY1fBZM" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jogo%20de%20copos%20Dream%20350%20ml%20Haus%20Concept." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/aIXKknQ.jpeg" alt="Jogo de facas Tramontina com cabos de madeira" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jogo de facas Tramontina com cabos de madeira</h3>
+            <p class="store">Amazon</p>
+          </div>
+          <div class="gift-icon">🔪</div>
+        </div>
+        <p class="note">Cozinha com cara de cozinha de verdade</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.amazon.com.br/Tradicional-Sortidos-Laminas-Tramontina-22299026/dp/B01KZC1DIK?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2MJN5L5JZ3K1V&dib=eyJ2IjoiMSJ9._cC8tCaYnc4AdcrBY-3s3LQx417omLUhtdL_3Q7Tw48rRyYXexyQfWyNJBzuQ2cZabn_UnhF0C1U44qV3AyqfFQNPPyv8sJSCNoGoHXcrDiskR4iHgjqcrgps8a70JNgrj9POhO-eoSxJ_E5iVaUP6bzyl_lyn1SZMwC3_gs8JVYyagVpjUu7CeBT7pk7hQ2arU4UHKjJerIYAliew9cRExGCoOnli_vBNi7plsuZiTCHeF1tf_yGSWQ17Ti_jE7DEzLr4d4qVN0ZlR-yYxIhvn-JECDPPdBy5rThaGttV0.3Uus7yKffvqSACalvFkIuuhu0qpUkGvEAW9Ps3b8lMI&dib_tag=se&keywords=jogo+facas+madeira+tramontina&qid=1773680009&sprefix=jogo+facas+madeira+tramontin%2Caps%2C325&sr=8-12&ufe=app_do%3Aamzn1.fos.4bb5663b-6f7d-4772-84fa-7c7f565ec65b" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jogo%20de%20facas%20Tramontina%20com%20cabos%20de%20madeira." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/9hUjtbj.jpeg" alt="Kit acessórios para queijo 4 peças" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Kit acessórios para queijo 4 peças</h3>
+            <p class="store">Riachuelo</p>
+          </div>
+          <div class="gift-icon">🧀</div>
+        </div>
+        <p class="note">Para receber bem</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.riachuelo.com.br/kit-acessorios-para-queijo-4-pecas-de-madeira-marrom-casa-riachuelo-16248953001_sku_sku" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Kit%20acess%C3%B3rios%20para%20queijo%204%20pe%C3%A7as." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/k7Tblqo.jpeg" alt="Kit tábuas de bambu 2 peças" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Kit tábuas de bambu 2 peças</h3>
+            <p class="store">Riachuelo</p>
+          </div>
+          <div class="gift-icon">🪵</div>
+        </div>
+        <p class="note">Lindo e útil</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.riachuelo.com.br/kit-tabuas-de-bambu-2-pecas-classic-marrom-casa-riachuelo-15247643001_sku_sku" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Kit%20t%C3%A1buas%20de%20bambu%202%20pe%C3%A7as." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/Sesm6D8.jpeg" alt="Porta papel-toalha Cecília dourado" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Porta papel-toalha Cecília dourado</h3>
+            <p class="store">Riachuelo</p>
+          </div>
+          <div class="gift-icon">🧻</div>
+        </div>
+        <p class="note">Funcional com charme</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.riachuelo.com.br/porta-papel-toalha-cecilia-29x16cm-dourado-casa-riachuelo-15723984001_sku_sku" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Porta%20papel-toalha%20Cec%C3%ADlia%20dourado." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/wEbTPPG.jpeg" alt="Lata para pasta Vintage" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Lata para pasta Vintage</h3>
+            <p class="store">Riachuelo</p>
+          </div>
+          <div class="gift-icon">🍝</div>
+        </div>
+        <p class="note">Organização com cara de casa arrumada</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.riachuelo.com.br/lata-para-pasta-vintage-32x11cm-branca-casa-riachuelo-15738892001_sku_sku" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Lata%20para%20pasta%20Vintage." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/LG8mxeV.jpeg" alt="Lata de açúcar redonda Vintage" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Lata de açúcar redonda Vintage</h3>
+            <p class="store">Riachuelo</p>
+          </div>
+          <div class="gift-icon">🍚</div>
+        </div>
+        <p class="note">Cozinha harmônica é outro nível</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.riachuelo.com.br/lata-de-acucar-redonda-vintage-17x11cm-branca-casa-riachuelo-15738868001_sku_sku" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Lata%20de%20a%C3%A7%C3%BAcar%20redonda%20Vintage." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/Iu3Wo3l.jpeg" alt="Conjunto de utensílios para pizza 2 peças" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Conjunto de utensílios para pizza 2 peças</h3>
+            <p class="store">Riachuelo</p>
+          </div>
+          <div class="gift-icon">🍕</div>
+        </div>
+        <p class="note">Porque pizza merece respeito</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.riachuelo.com.br/conjunto-utensilios-para-pizza-2-pecas-bege-casa-riachuelo-16005333001_sku_sku" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Conjunto%20de%20utens%C3%ADlios%20para%20pizza%202%20pe%C3%A7as." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    </div></div><div class="gift-group"><div class="group-head"><span>Cozinha & detalhes</span></div><div class="gift-grid">
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/pfkSCD4.jpeg" alt="Azeiteiro com alca Oasis 250 ml em ceramica com rolha" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Azeiteiro com alca Oasis 250 ml</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127869;</div>
+        </div>
+        <p class="note">Ceramica com rolha para a cozinha do dia a dia</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/azeiteiro-com-alca-oasis-250-ml-em-cermica-com-rolha/p/MLB38374951?pdp_filters=item_id%3AMLB5804786794&matt_tool=38524122#origin=share&sid=share&wid=MLB5804786794" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Azeiteiro%20com%20alca%20Oasis%20250%20ml." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/ks09sEe.jpeg" alt="Acucareiro em ceramica Oasis 360 ml" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Acucareiro em ceramica Oasis 360 ml</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127869;</div>
+        </div>
+        <p class="note">Com colher e tampa de bambu</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/acucareiro-em-ceramica-com-colher-tampa-bambu-360ml-oasis/up/MLBU3822733867?pdp_filters=item_id%3AMLB4510216515&matt_tool=38524122#origin=share&sid=share&wid=MLB4510216515" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Acucareiro%20em%20ceramica%20Oasis%20360%20ml." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/TQPb09f.jpeg" alt="Saleiro Oasis em ceramica 300 ml" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Saleiro Oasis em ceramica 300 ml</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#129474;</div>
+        </div>
+        <p class="note">Tampa de bambu para completar o conjunto</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/saleiro-oasis-cermica-tampa-de-bambu-300ml-branco-etilux/p/MLB38025931?pdp_filters=item_id%3AMLB4192286651&matt_tool=38524122#origin=share&sid=share&wid=MLB4192286651" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Saleiro%20Oasis%20em%20ceramica%20300%20ml." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/Hn9PXOx.jpeg" alt="Grill e sanduicheira 2 em 1 Philco" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Grill e sanduicheira 2 em 1 Philco</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127857;</div>
+        </div>
+        <p class="note">Chapa com abertura de 180 graus</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/grill-e-sanduicheira-2-em-1-chapa-com-abertura-180-pgr50a-philco-cor-preto/p/MLB42196270?pdp_filters=item_id%3AMLB5269931008&attributes=COLOR%3APreto_vpp%2CVOLTAGE%3A220V_vpp&matt_tool=38524122#origin=share&sid=share&wid=MLB5269931008" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Grill%20e%20sanduicheira%202%20em%201%20Philco." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    </div></div><div class="gift-group"><div class="group-head"><span>Assadeiras & forno</span></div><div class="gift-grid">
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/ad3JZlL.jpeg" alt="Marinex conjunto de assadeiras oval 3 pecas" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Marinex conjunto de assadeiras oval 3 pecas</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127858;</div>
+        </div>
+        <p class="note">Conjunto branco para receitas do forno</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/marinex-conjunto-de-assadeiras-oval-opaline-3-pecas-branco/p/MLB27410145?pdp_filters=item_id%3AMLB4941124508&matt_tool=38524122#origin=share&sid=share&wid=MLB4941124508" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Marinex%20conjunto%20de%20assadeiras%20oval%203%20pecas." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/omJcgxI.jpeg" alt="Kit 3 formas de bolo e pudim" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Kit 3 formas de bolo e pudim</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127856;</div>
+        </div>
+        <p class="note">Tamanhos 18, 20 e 22 com furo central</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/kit-3-formas-de-bolo-pudim-aluminio-n18-20-22-assadeira-furo-central-pudim-bolo-vulco-tubo-prateado-kit-n18-20-e-22-green-clean/p/MLB59138465?pdp_filters=item_id%3AMLB4243190123&matt_tool=38524122#origin=share&sid=share&wid=MLB4243190123" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Kit%203%20formas%20de%20bolo%20e%20pudim." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/UNtSIlY.jpeg" alt="Oxford conjunto de 3 refratarias Bake" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Oxford conjunto de 3 refratarias Bake</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127858;</div>
+        </div>
+        <p class="note">Refratarias brancas para servir e assar</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/oxford-conjunto-de-3-refratarias-bake-branco/p/MLB27513587?pdp_filters=item_id%3AMLB3475633701&matt_tool=38524122#origin=share&sid=share&wid=MLB3475633701" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Oxford%20conjunto%20de%203%20refratarias%20Bake." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/hpgkbgj.jpeg" alt="Kit 3 formas para pizza redonda" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Kit 3 formas para pizza redonda</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127829;</div>
+        </div>
+        <p class="note">Tamanhos 25, 30 e 35 cm</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/kit-3-forma-assadeira-pizza-redonda-253035-cm-aluminio-b88/up/MLBU597180051?pdp_filters=item_id%3AMLB1696132817&matt_tool=38524122#origin=share&sid=share&wid=MLB1696132817" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Kit%203%20formas%20para%20pizza%20redonda." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/Q6fchHC.jpeg" alt="Kit 4 assadeiras retangulares" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Kit 4 assadeiras retangulares</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127858;</div>
+        </div>
+        <p class="note">Aluminio reforcado para o forno do dia a dia</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/kit-4-assadeiras-aluminio-reforcado-retangular-forno-alta/up/MLBU3336389042?pdp_filters=item_id%3AMLB4142910787&matt_tool=38524122#origin=share&sid=share&wid=MLB4142910787" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Kit%204%20assadeiras%20retangulares." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/83atKmM.jpeg" alt="Jogo de assadeiras Tramontina 3 pecas" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jogo de assadeiras Tramontina 3 pecas</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127858;</div>
+        </div>
+        <p class="note">Aluminio com revestimento antiaderente</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/jogo-de-assadeiras-brasil-em-aluminio-com-revestimento-antiaderente-starflon-max-3-pecas-cor-grafite-tramontina/p/MLB27670124?pdp_filters=item_id%3AMLB3823445793&matt_tool=38524122#origin=share&sid=share&wid=MLB3823445793" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jogo%20de%20assadeiras%20Tramontina%203%20pecas." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/kLbZB9P.jpeg" alt="Conjunto Marinex 6 pecas com tampa" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Conjunto Marinex 6 pecas com tampa</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127858;</div>
+        </div>
+        <p class="note">Vidro com tampa para assar, guardar e servir</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/conjunto-assadeiras-6-pecas-de-vidro-com-tampa-cinza-marinex/p/MLB28025230?pdp_filters=item_id%3AMLB5525354376&matt_tool=38524122#origin=share&sid=share&wid=MLB5525354376" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Conjunto%20Marinex%206%20pecas%20com%20tampa." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/PqCPUGu.jpeg" alt="Jogo de assadeiras Tramontina 2 pecas rosa" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Jogo de assadeiras Tramontina 2 pecas rosa</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#127872;</div>
+        </div>
+        <p class="note">Antiaderente com um toque delicado de cor</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/jogo-de-assadeiras-tramontina-antiaderente-brasil-2-pc-rosa/p/MLB27665157?pdp_filters=item_id%3AMLB3659295809&matt_tool=38524122#origin=share&sid=share&wid=MLB3659295809" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Jogo%20de%20assadeiras%20Tramontina%202%20pecas%20rosa." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    </div></div><div class="gift-group"><div class="group-head"><span>Casa & organizacao</span></div><div class="gift-grid">
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/RcARKTh.jpeg" alt="Varal de chao 174 cm Mor" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Varal de chao 174 cm Mor</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#128087;</div>
+        </div>
+        <p class="note">Grande, resistente e com capacidade para 25 kg</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/varal-de-cho-174-cm-big-grande-resistente-25kg-roupas-mor/p/MLB34695439?pdp_filters=item_id%3AMLB4381691689&matt_tool=38524122#origin=share&sid=share&wid=MLB4381691689" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Varal%20de%20chao%20174%20cm%20Mor." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/c1KfUVQ.jpeg" alt="Lixeira redonda com pedal" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Lixeira redonda com pedal</h3>
+            <p class="store">Mercado Livre</p>
+          </div>
+          <div class="gift-icon">&#128465;</div>
+        </div>
+        <p class="note">Plastico com tampa de madeira para banheiro ou cozinha</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.mercadolivre.com.br/lixeira-redonda-de-plastico-cestampa-de-madeira-pedal/up/MLBU3368589059?pdp_filters=item_id%3AMLB4168251333&matt_tool=38524122#origin=share&sid=share&wid=MLB4168251333" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Lixeira%20redonda%20com%20pedal." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    </div></div><div class="gift-group"><div class="group-head"><span>Grandes sonhos da casa</span></div><div class="gift-grid">
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/6r8EMEJ.jpeg" alt="Forno elétrico de embutir Brastemp Inox" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Forno elétrico de embutir Brastemp Inox</h3>
+            <p class="store">Brastemp</p>
+          </div>
+          <div class="gift-icon">🔥</div>
+        </div>
+        <p class="note">O tipo de item que já deixa a cozinha com cara de revista</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://www.brastemp.com.br/forno-eletrico-de-embutir-brastemp-inox-bo260ar/p" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Forno%20el%C3%A9trico%20de%20embutir%20Brastemp%20Inox." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    
+
+    <article class="gift-card">
+      <div class="gift-thumb"><img src="https://i.imgur.com/R10fWlL.jpeg" alt="Lava-louças Electrolux 14 serviços Inox" loading="lazy" referrerpolicy="no-referrer"></div>
+      <div class="gift-body">
+        <div class="gift-head">
+          <div>
+            <h3>Lava-louças Electrolux 14 serviços Inox</h3>
+            <p class="store">Electrolux</p>
+          </div>
+          <div class="gift-icon">🍽️</div>
+        </div>
+        <p class="note">Amor, paz e menos louça na pia</p>
+        <div class="gift-actions">
+          <a class="btn btn-primary" href="https://loja.electrolux.com.br/lava-loucas-electrolux-14-servicos-inox-com-funcao-higienizar-compras--ll14x-/p?skuId=310118553" target="_blank" rel="noreferrer">Ver presente</a>
+          <a class="btn btn-secondary" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda%21%20Quero%20presentear%20voc%C3%AAs%20com%20este%20item%3A%20Lava-lou%C3%A7as%20Electrolux%2014%20servi%C3%A7os%20Inox." target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          <button class="btn btn-secondary reserve-btn" type="button">Marcar como reservado</button>
+        </div>
+      </div>
+    </article>
+    </div></div>
+    </section>
+
+    <section id="pix" class="section">
+      <div class="pix-shell">
+        <div class="pix-card">
+          <div class="icon-box">🔳</div>
+          <h2>Prefere contribuir com Pix?</h2>
+          <p>Sem problema. Se ficar mais fácil, você também pode contribuir por Pix. Qualquer valor já ajuda muito a gente a montar o nosso cantinho com carinho.</p>
+          <div class="actions">
+            <button class="btn btn-primary" id="copyPixBtn" type="button">Copiar chave Pix</button>
+            <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://wa.me/5527998090987?text=Oi%2C%20Amanda!%20Quero%20contribuir%20com%20voc%C3%AAs%20por%20Pix."><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;">
+<path d="M20.52 3.48A11.94 11.94 0 0012.05 0C5.52 0 .19 5.33.19 11.86c0 2.09.55 4.14 1.6 5.94L0 24l6.36-1.67a11.82 11.82 0 005.69 1.45h.01c6.53 0 11.86-5.33 11.86-11.86 0-3.17-1.23-6.14-3.4-8.44zM12.06 21.2c-1.78 0-3.52-.48-5.03-1.39l-.36-.21-3.78.99 1.01-3.69-.23-.38a9.14 9.14 0 01-1.4-4.88c0-5.05 4.11-9.16 9.17-9.16 2.45 0 4.75.95 6.48 2.67a9.12 9.12 0 012.68 6.49c0 5.05-4.11 9.16-9.16 9.16zm5.07-6.84c-.28-.14-1.66-.82-1.92-.91-.26-.09-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.17.19-.33.21-.61.07-.28-.14-1.19-.44-2.27-1.41-.84-.75-1.41-1.67-1.58-1.95-.17-.28-.02-.43.12-.57.12-.12.28-.33.42-.49.14-.17.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48l-.55-.01c-.19 0-.49.07-.75.35s-.98.96-.98 2.34c0 1.38 1 2.72 1.14 2.91.14.19 1.97 3 4.77 4.21.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.66-.68 1.9-1.33.23-.65.23-1.21.16-1.33-.07-.12-.26-.19-.54-.33z"/>
+</svg>Falar com a Amanda</a>
+          </div>
+        </div>
+        <div class="pix-info">
+          <div class="qr-wrap"><div class="qr-card"><img src="pix-qrcode.png" alt="QR Code Pix" width="220" height="220"></div></div>
+          <div>
+            <div class="eyebrow">Chave Pix</div>
+            <div class="pix-key">(27) 99809-0987</div>
+            <p><strong>Nome:</strong> Amanda Claudino De Almeida<br><strong>Banco:</strong> Banco Inter</p><p>Você pode escanear o QR Code ou copiar a chave Pix acima. Se quiser, também pode falar direto com a Amanda para combinar da forma que for melhor.</p>
+          </div>
+        </div>
+      </div>
+      <div class="delivery-card">
+        <div class="icon-box">📦</div>
+        <h2>Prefere enviar o presente?</h2>
+        <p>Se for mais fácil mandar direto para entrega, este é o endereço para receber os presentes com carinho.</p>
+        <address class="delivery-address">
+          Rua Xenócrates Calmon, 255<br>
+          Casa, ao lado da padaria Malacarne<br>
+          Bairro Nossa Senhora Aparecida<br>
+          Colatina, ES
+        </address>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:42px;">
+      <div class="final-card">
+        <div class="eyebrow">Com carinho</div>
+        <h2>Obrigado por fazer parte desse momento</h2>
+        <p>Cada contribuição, grande ou pequena, já entra para a história do nosso lar. Estamos muito felizes por viver esse novo começo cercados de carinho.</p>
+        <div class="signature">Amanda & Leo</div>
+        <p class="footer-credit">Desenvolvido pelo <a href="https://www.linkedin.com/in/wotikoski/" target="_blank" rel="noreferrer">Leo</a>. 💻</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast">Chave Pix copiada</div>
+  <script>
+    const pixKey = "27998090987";
+    const copyPixBtn = document.getElementById('copyPixBtn');
+    const toast = document.getElementById('toast');
+    document.querySelectorAll('.reserve-btn').forEach((button) => button.remove());
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    copyPixBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(pixKey);
+        showToast('Chave Pix copiada');
+      } catch {
+        showToast('Não foi possível copiar automaticamente');
+      }
+    });
+    const cards = document.querySelectorAll('.gift-card');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transitionDelay = `${Math.min(index * 35, 240)}ms`;
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      cards.forEach((card) => observer.observe(card));
+    } else {
+      cards.forEach((card) => card.classList.add('revealed'));
+    }
+  </script>
+</body>
+</html>
